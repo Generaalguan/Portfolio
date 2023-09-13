@@ -1,0 +1,49 @@
+@use "../../../components/mixins.scss";
+
+.contact {
+    width: 100%;
+    padding:  20rem 0rem;
+    scroll-margin: 10rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../../../../img/background.webp);
+    background-size: cover;
+
+    &__form {
+        background: white;
+        width: 60%;
+        max-width: 90rem;
+        padding: 2rem 4rem;
+        display: flex;
+        flex-direction: column;
+        border-radius: 1rem;
+        @include mixins.shadow;
+    }
+
+    &__title{
+        font-weight: 600;
+    }
+
+    &__input, &__textarea{
+        border: 0;
+        margin: 1rem 0;
+        padding: 2rem;
+        outline: none;
+        background: #f5f5f5;
+        font-size: 1.6rem;
+        font-weight: 500;
+        font-family: 'Source Sans Pro', sans-serif;
+        resize: none;
+    }
+    &__textarea{
+        width: 100%
+    }
+
+
+
+    &__btn{
+        @include mixins.cta;
+    }
+
+}

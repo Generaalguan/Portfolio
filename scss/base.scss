@@ -1,0 +1,43 @@
+@use "components/colors.scss";
+
+body {
+    width: 100%;
+    height: 100%;
+    color: colors.$gray;
+    font-size: 2rem;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.section__intro {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    width: 50%;
+    padding: 4rem 0;
+}
+
+.section__title {
+    font-size: 200%;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: calc(100% + 1.5rem);
+        height: 5px;
+        width: 3rem;
+        background: #00bf8f;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 5px;
+    }
+}
+
+.section__description {
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
